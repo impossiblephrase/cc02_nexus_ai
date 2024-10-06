@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
-import Skills from "@/components/main/Skills";
 import Hero from "@/components/main/Hero";
 import Footer from "@/components/main/Footer";
 
