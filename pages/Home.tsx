@@ -15,14 +15,14 @@ const HomePage = () => {
           </p>
           <div className="mt-8 space-x-4">
             <Link href="/contact">
-              <a className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition">
+              <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition">
                 Get Started
-              </a>
+              </button>
             </Link>
             <Link href="/about">
-              <a className="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition">
+              <button className="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition">
                 Learn More
-              </a>
+              </button>
             </Link>
           </div>
         </div>
@@ -64,9 +64,9 @@ const HomePage = () => {
                 <li>100% Client Satisfaction Rate</li>
               </ul>
               <Link href="/about">
-                <a className="mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                <button className="mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
                   About Us
-                </a>
+                </button>
               </Link>
             </div>
           </div>
@@ -88,9 +88,9 @@ const HomePage = () => {
                 Automate repetitive tasks and optimize workflows with intelligent AI systems that save time and resources.
               </p>
               <Link href="/services">
-                <a className="mt-4 px-4 py-2 text-blue-600 hover:underline">
+                <button className="mt-4 px-4 py-2 text-blue-600 hover:underline">
                   Learn More
-                </a>
+                </button>
               </Link>
             </div>
             {/* Service 2 */}
@@ -100,9 +100,9 @@ const HomePage = () => {
                 Unlock the power of your data with predictive analytics and actionable insights that drive smarter decision-making.
               </p>
               <Link href="/services">
-                <a className="mt-4 px-4 py-2 text-blue-600 hover:underline">
+                <button className="mt-4 px-4 py-2 text-blue-600 hover:underline">
                   Learn More
-                </a>
+                </button>
               </Link>
             </div>
             {/* Service 3 */}
@@ -112,9 +112,9 @@ const HomePage = () => {
                 Improve customer interactions, from chatbots to language translation, using advanced NLP models.
               </p>
               <Link href="/services">
-                <a className="mt-4 px-4 py-2 text-blue-600 hover:underline">
+                <button className="mt-4 px-4 py-2 text-blue-600 hover:underline">
                   Learn More
-                </a>
+                </button>
               </Link>
             </div>
             {/* Service 4 */}
@@ -124,16 +124,16 @@ const HomePage = () => {
                 Harness the power of AI for image recognition, object detection, and video analytics to enhance operational efficiency.
               </p>
               <Link href="/services">
-                <a className="mt-4 px-4 py-2 text-blue-600 hover:underline">
+                <button className="mt-4 px-4 py-2 text-blue-600 hover:underline">
                   Learn More
-                </a>
+                </button>
               </Link>
             </div>
           </div>
           <Link href="/services">
-            <a className="mt-10 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+            <button className="mt-10 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
               View All Services
-            </a>
+            </button>
           </Link>
         </div>
       </section>
@@ -166,9 +166,9 @@ const HomePage = () => {
             </div>
           </div>
           <Link href="/testimonials">
-            <a className="mt-10 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+            <button className="mt-10 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
               Read More Testimonials
-            </a>
+            </button>
           </Link>
         </div>
       </section>
