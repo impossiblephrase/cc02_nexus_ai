@@ -2,120 +2,115 @@ import React from 'react';
 
 const TeamsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-50">
       {/* Page Header */}
-      <section className="bg-blue-600 text-white py-24">
+      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-24">
         <div className="container mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold">Meet the Nexus AI Team</h1>
-          <p className="mt-4 text-lg max-w-2xl mx-auto">
-            At Nexus AI, we believe that our success is driven by the incredible talent and dedication of our team. Each member brings a unique set of skills and experiences to the table, creating a dynamic environment of innovation, collaboration, and continuous learning.
+          <h1 className="text-5xl font-bold mb-4">Meet the Nexus AI Team</h1>
+          <p className="text-lg max-w-2xl mx-auto">
+            At Nexus AI, our success is driven by our talented and dedicated team. Explore the dynamic mix of innovation, collaboration, and expertise that drives us forward.
           </p>
         </div>
       </section>
 
-      {/* Leadership Team */}
+      {/* Leadership Team - Zigzag Layout */}
       <section className="py-16 container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Leadership Team</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Adi Nugroho */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/adi-nugroho.jpg" // Replace with actual image paths
-              alt="Adi Nugroho"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Adi Nugroho</h3>
-            <p className="text-gray-600">Founder & CEO</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: AI Strategy, Business Development, Software Engineering
-            </p>
-            <p className="mt-2 text-gray-500">
-              As the visionary behind Nexus AI, Adi founded the company in 2020 with the goal of helping Indonesian businesses embrace AI technology.
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Leadership Team</h2>
+
+        {/* Leadership Member: Adi Nugroho */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-100 p-8 rounded-lg shadow-lg">
+          <img
+            src="/Adi_Nugroho.webp" // Replace with actual image path
+            alt="Adi Nugroho"
+            className="w-full h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+          />
+          <div className="text-left md:pl-8">
+            <h3 className="text-4xl font-bold text-gray-800">Adi Nugroho</h3>
+            <p className="text-indigo-600 font-semibold">Founder & CEO</p>
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              Expertise: AI Strategy, Business Development, Software Engineering. Adi founded Nexus AI in 2020 with a mission to help Indonesian businesses embrace AI technology. His leadership ensures Nexus AI remains a trailblazer in AI-driven innovation.
             </p>
             <div className="mt-4">
-              <a href="mailto:adi@nexusai.com" className="text-blue-600 underline">
+              <a href="mailto:adi@nexusai.com" className="text-indigo-600 hover:text-indigo-800 underline">
                 Email
               </a>
               <br />
-              <a href="https://www.linkedin.com/in/adinugroho" className="text-blue-600 underline">
+              <a href="https://www.linkedin.com/in/adinugroho" className="text-indigo-600 hover:text-indigo-800 underline">
                 LinkedIn
               </a>
             </div>
           </div>
+        </div>
 
-          {/* Kartika Sari */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/kartika-sari.jpg" // Replace with actual image paths
-              alt="Kartika Sari"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Kartika Sari</h3>
-            <p className="text-gray-600">Chief Technology Officer (CTO)</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: Machine Learning, Deep Learning, Software Development
-            </p>
-            <p className="mt-2 text-gray-500">
-              Kartika leads Nexus AI's technological innovation, ensuring that our AI solutions remain at the cutting edge.
+        {/* Leadership Member: Kartika Sari */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-200 p-8 rounded-lg shadow-lg md:flex-row-reverse">
+          <img
+            src="/Kartika_Sari.webp" // Replace with actual image path
+            alt="Kartika Sari"
+            className="w-full h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+          />
+          <div className="text-left md:pr-8">
+            <h3 className="text-4xl font-bold text-gray-800">Kartika Sari</h3>
+            <p className="text-indigo-600 font-semibold">Chief Technology Officer (CTO)</p>
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              Expertise: Machine Learning, Deep Learning, Software Development. Kartika drives the technology vision at Nexus AI, ensuring our AI solutions remain cutting-edge and scalable to meet the challenges of tomorrow.
             </p>
             <div className="mt-4">
-              <a href="mailto:kartika@nexusai.com" className="text-blue-600 underline">
+              <a href="mailto:kartika@nexusai.com" className="text-indigo-600 hover:text-indigo-800 underline">
                 Email
               </a>
               <br />
-              <a href="https://www.linkedin.com/in/kartikasari" className="text-blue-600 underline">
+              <a href="https://www.linkedin.com/in/kartikasari" className="text-indigo-600 hover:text-indigo-800 underline">
                 LinkedIn
               </a>
             </div>
           </div>
+        </div>
 
-          {/* Budi Santoso */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/budi-santoso.jpg" // Replace with actual image paths
-              alt="Budi Santoso"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Budi Santoso</h3>
-            <p className="text-gray-600">Chief Data Scientist</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: Data Analytics, Predictive Modeling, Data Architecture
-            </p>
-            <p className="mt-2 text-gray-500">
-              Budi brings years of experience in data science and analytics, helping businesses turn raw data into actionable insights.
+        {/* Leadership Member: Budi Santoso */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-100 p-8 rounded-lg shadow-lg">
+          <img
+            src="/Budi_Santoso.webp" // Replace with actual image path
+            alt="Budi Santoso"
+            className="w-72 h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+          />
+          <div className="text-left md:pl-8">
+            <h3 className="text-4xl font-bold text-gray-800">Budi Santoso</h3>
+            <p className="text-indigo-600 font-semibold">Chief Data Scientist</p>
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              Expertise: Data Analytics, Predictive Modeling, Data Architecture. Budi leads the data science team at Nexus AI, helping businesses unlock the full potential of their data through advanced AI and machine learning models.
             </p>
             <div className="mt-4">
-              <a href="mailto:budi@nexusai.com" className="text-blue-600 underline">
+              <a href="mailto:budi@nexusai.com" className="text-indigo-600 hover:text-indigo-800 underline">
                 Email
               </a>
               <br />
-              <a href="https://www.linkedin.com/in/budisantoso" className="text-blue-600 underline">
+              <a href="https://www.linkedin.com/in/budisantoso" className="text-indigo-600 hover:text-indigo-800 underline">
                 LinkedIn
               </a>
             </div>
           </div>
+        </div>
 
-          {/* Rina Wijaya */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/rina-wijaya.jpg" // Replace with actual image paths
-              alt="Rina Wijaya"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Rina Wijaya</h3>
-            <p className="text-gray-600">Head of AI Consulting</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: AI Strategy, Technology Consulting, Digital Transformation
-            </p>
-            <p className="mt-2 text-gray-500">
-              Rina leads our AI consulting practice, guiding clients through the digital transformation process.
+        {/* Leadership Member: Rina Wijaya */}
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-200 p-8 rounded-lg shadow-lg md:flex-row-reverse">
+          <img
+            src="/images/rina-wijaya.jpg" // Replace with actual image path
+            alt="Rina Wijaya"
+            className="w-full h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
+          />
+          <div className="text-left md:pr-8">
+            <h3 className="text-4xl font-bold text-gray-800">Rina Wijaya</h3>
+            <p className="text-indigo-600 font-semibold">Head of AI Consulting</p>
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              Expertise: AI Strategy, Technology Consulting, Digital Transformation. Rina works closely with clients to craft AI roadmaps that align with their goals, ensuring seamless AI integration and digital transformation.
             </p>
             <div className="mt-4">
-              <a href="mailto:rina@nexusai.com" className="text-blue-600 underline">
+              <a href="mailto:rina@nexusai.com" className="text-indigo-600 hover:text-indigo-800 underline">
                 Email
               </a>
               <br />
-              <a href="https://www.linkedin.com/in/rinawijaya" className="text-blue-600 underline">
+              <a href="https://www.linkedin.com/in/rinawijaya" className="text-indigo-600 hover:text-indigo-800 underline">
                 LinkedIn
               </a>
             </div>
@@ -123,94 +118,43 @@ const TeamsPage = () => {
         </div>
       </section>
 
-      {/* Team Members */}
+      {/* Team Members Section */}
       <section className="py-16 container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Our Team Members</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Our Team Members</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Teguh Pratama */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/teguh-pratama.jpg" // Replace with actual image paths
-              alt="Teguh Pratama"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Teguh Pratama</h3>
-            <p className="text-gray-600">Senior AI Engineer</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: Natural Language Processing, Computer Vision, AI System Architecture
-            </p>
-            <div className="mt-4">
-              <a href="mailto:teguh@nexusai.com" className="text-blue-600 underline">
-                Email
-              </a>
+          <div className="bg-white p-8 shadow-xl rounded-lg hover:shadow-2xl transition duration-500">
+            <div className="flex flex-col md:flex-row items-center">
+              <img
+                src="/images/teguh-pratama.jpg" // Replace with actual image path
+                alt="Teguh Pratama"
+                className="w-40 h-40 rounded-full shadow-lg mb-6 md:mb-0 md:mr-6 object-cover transform hover:scale-105 transition duration-300"
+              />
+              <div className="text-left">
+                <h3 className="text-2xl font-bold text-gray-800">Teguh Pratama</h3>
+                <p className="text-indigo-600 font-semibold">Senior AI Engineer</p>
+                <p className="mt-4 text-gray-700 leading-relaxed">
+                  Expertise: Natural Language Processing, Computer Vision, AI System Architecture.
+                </p>
+                <div className="mt-4">
+                  <a href="mailto:teguh@nexusai.com" className="text-indigo-600 hover:text-indigo-800 underline">
+                    Email
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Putri Anggraini */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/putri-anggraini.jpg" // Replace with actual image paths
-              alt="Putri Anggraini"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Putri Anggraini</h3>
-            <p className="text-gray-600">Data Scientist</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: Data Analytics, Machine Learning, Business Intelligence
-            </p>
-            <div className="mt-4">
-              <a href="mailto:putri@nexusai.com" className="text-blue-600 underline">
-                Email
-              </a>
-            </div>
-          </div>
-
-          {/* Ari Wibowo */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/ari-wibowo.jpg" // Replace with actual image paths
-              alt="Ari Wibowo"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Ari Wibowo</h3>
-            <p className="text-gray-600">Software Engineer</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: Full-Stack Development, AI Integration, Cloud Computing
-            </p>
-            <div className="mt-4">
-              <a href="mailto:ari@nexusai.com" className="text-blue-600 underline">
-                Email
-              </a>
-            </div>
-          </div>
-
-          {/* Siti Nurhaliza */}
-          <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-            <img
-              src="/images/siti-nurhaliza.jpg" // Replace with actual image paths
-              alt="Siti Nurhaliza"
-              className="w-32 h-32 rounded-full mx-auto mb-4"
-            />
-            <h3 className="text-xl font-bold">Siti Nurhaliza</h3>
-            <p className="text-gray-600">Customer Success Manager</p>
-            <p className="mt-4 text-gray-700">
-              Expertise: Client Relations, AI Implementation, Project Management
-            </p>
-            <div className="mt-4">
-              <a href="mailto:siti@nexusai.com" className="text-blue-600 underline">
-                Email
-              </a>
-            </div>
-          </div>
+          {/* More team members here... */}
         </div>
       </section>
 
       {/* Join Our Team */}
-      <section className="bg-blue-600 text-white py-12">
+      <section className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-12">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold">Join Our Team</h2>
           <p className="mt-4 text-lg max-w-2xl mx-auto">
-            At Nexus AI, we are always looking for talented and driven individuals who are passionate about the future of AI. If you’re interested in joining our team, explore our open positions and be a part of a collaborative, innovative environment.
+            At Nexus AI, we are always looking for talented individuals passionate about AI's future. Explore our open positions and join our innovative team.
           </p>
           <div className="mt-6">
             <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-200">
@@ -222,10 +166,10 @@ const TeamsPage = () => {
 
       {/* Why Work with Us */}
       <section className="py-16 container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Why Work with Us?</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Why Work with Us?</h2>
         <div className="text-center">
-          <p className="mt-4 text-lg max-w-2xl mx-auto">
-            At Nexus AI, our people are our greatest asset. We offer a dynamic, inclusive work environment where creativity and innovation are encouraged. Whether you’re an AI engineer, a data scientist, or a strategist, you’ll find a place here to grow, learn, and make an impact.
+          <p className="mt-4 text-lg max-w-2xl mx-auto text-gray-700">
+            At Nexus AI, our people are our greatest asset. We offer a dynamic, inclusive work environment where creativity and innovation are encouraged.
           </p>
           <ul className="mt-8 text-lg max-w-2xl mx-auto text-gray-700 space-y-4">
             <li>• Innovation-Driven: We push the boundaries of AI technology to deliver cutting-edge solutions.</li>

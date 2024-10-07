@@ -3,7 +3,6 @@ import Hero from "@/components/main/Hero";
 import HomePage from "@/pages/Home";
 import TeamsPage from "@/pages/OurTeam";
 import AboutPage from "@/pages/about";
-import ServicesPage from "@/pages/services";
 
 
 export default function Home() {
@@ -13,7 +12,6 @@ export default function Home() {
       <Hero />
       <HomePage />
       <AboutPage />
-      <ServicesPage />
       <TeamsPage />
     </div>
 
