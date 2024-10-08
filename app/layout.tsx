@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import StarsCanvas from "@/components/main/StarBackground";
-import Navbar from "@/components/main/Navbar";
-import Hero from "@/components/main/Hero";
-import Footer from "@/components/main/Footer";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,7 +30,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#030014] overflow-y-scroll overflow-x-hidden`}>
-          <StarsCanvas/>
           <Navbar/>
 
         {children}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const HomePage = () => {
   return (
@@ -14,12 +15,12 @@ const HomePage = () => {
             At Nexus AI, we combine cutting-edge artificial intelligence with industry expertise to unlock new growth opportunities for your business. Transform the way you operate with intelligent automation, data-driven insights, and future-proof AI technology.
           </p>
           <div className="mt-8 space-x-4">
-            <Link href="/contact">
+            <Link href="/about-us">
               <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition">
                 Get Started
               </button>
             </Link>
-            <Link href="/about">
+            <Link href="/about-us">
               <button className="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition">
                 Learn More
               </button>
@@ -63,7 +64,7 @@ const HomePage = () => {
                 <li>+10 Industries Served</li>
                 <li>100% Client Satisfaction Rate</li>
               </ul>
-              <Link href="/about">
+              <Link href="/about-us">
                 <button className="mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
                   About Us
                 </button>
