@@ -95,7 +95,7 @@ const TeamsPage = () => {
         {/* Leadership Member: Rina Wijaya */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-200 p-8 rounded-lg shadow-lg md:flex-row-reverse">
           <img
-            src="/images/rina-wijaya.jpg" // Replace with actual image path
+            src="" // Replace with actual image path
             alt="Rina Wijaya"
             className="w-full h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
           />
@@ -126,7 +126,7 @@ const TeamsPage = () => {
           <div className="bg-white p-8 shadow-xl rounded-lg hover:shadow-2xl transition duration-500">
             <div className="flex flex-col md:flex-row items-center">
               <img
-                src="/images/teguh-pratama.jpg" // Replace with actual image path
+                src="/" // Replace with actual image path
                 alt="Teguh Pratama"
                 className="w-40 h-40 rounded-full shadow-lg mb-6 md:mb-0 md:mr-6 object-cover transform hover:scale-105 transition duration-300"
               />
