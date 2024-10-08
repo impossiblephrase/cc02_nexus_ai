@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const TeamsPage = () => {
@@ -19,7 +20,7 @@ const TeamsPage = () => {
 
         {/* Leadership Member: Adi Nugroho */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-100 p-8 rounded-lg shadow-lg">
-          <img
+          <Image
             src="/Adi_Nugroho.webp" // Replace with actual image path
             alt="Adi Nugroho"
             className="w-full h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
@@ -44,7 +45,7 @@ const TeamsPage = () => {
 
         {/* Leadership Member: Kartika Sari */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-200 p-8 rounded-lg shadow-lg md:flex-row-reverse">
-          <img
+          <Image
             src="/Kartika_Sari.webp" // Replace with actual image path
             alt="Kartika Sari"
             className="w-full h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
@@ -69,7 +70,7 @@ const TeamsPage = () => {
 
         {/* Leadership Member: Budi Santoso */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-100 p-8 rounded-lg shadow-lg">
-          <img
+          <Image
             src="/Budi_Santoso.webp" // Replace with actual image path
             alt="Budi Santoso"
             className="w-72 h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
@@ -94,7 +95,7 @@ const TeamsPage = () => {
 
         {/* Leadership Member: Rina Wijaya */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center mb-16 bg-gray-200 p-8 rounded-lg shadow-lg md:flex-row-reverse">
-          <img
+          <Image
             src="" // Replace with actual image path
             alt="Rina Wijaya"
             className="w-full h-72 md:w-96 md:h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition duration-300"
@@ -125,8 +126,8 @@ const TeamsPage = () => {
           {/* Teguh Pratama */}
           <div className="bg-white p-8 shadow-xl rounded-lg hover:shadow-2xl transition duration-500">
             <div className="flex flex-col md:flex-row items-center">
-              <img
-                src="/" // Replace with actual image path
+              <Image
+                src="" // Replace with actual image path
                 alt="Teguh Pratama"
                 className="w-40 h-40 rounded-full shadow-lg mb-6 md:mb-0 md:mr-6 object-cover transform hover:scale-105 transition duration-300"
               />
@@ -154,7 +155,7 @@ const TeamsPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold">Join Our Team</h2>
           <p className="mt-4 text-lg max-w-2xl mx-auto">
-            At Nexus AI, we are always looking for talented individuals passionate about AI's future. Explore our open positions and join our innovative team.
+            At Nexus AI, we are always looking for talented individuals passionate about AI future. Explore our open positions and join our innovative team.
           </p>
           <div className="mt-6">
             <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-200">
