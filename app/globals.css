@@ -61,8 +61,37 @@
     display: none;
   }
   
-  
-  
   html {
     scroll-behavior: smooth;
+  }
+
+  .animate-scroll {
+    display: flex;
+    gap: 40px;
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .logos-slider {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: scroll 30s linear infinite;
+  }
+
+  .logos-slider img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .logos-slider img:hover {
+    transform: scale(1.1);
   }

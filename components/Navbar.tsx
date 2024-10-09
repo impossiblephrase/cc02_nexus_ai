@@ -17,23 +17,24 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span className="font-bold  ml-[10px] hidden md:block text-gray-300">
             NEXUS AI
           </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-us" className="cursor-pointer">
-              About Us
-            </a>
-            <a href="services" className="cursor-pointer">
-              Services
-            </a>
-            <a href="our-team" className="cursor-pointer">
-              Our Team
-            </a>
-          </div>
+        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20 font-mono text-white">
+          <a href="about-us" className="cursor-pointer">
+            About Us
+          </a>
+          <a href="our-solutions" className="cursor-pointer">
+            Services
+          </a>
+          <a href="our-team" className="cursor-pointer">
+            Our Team
+          </a>
+          <a href="our-team" className="cursor-pointer">
+            Contact us        
+          </a>
         </div>
       </div>
     </div>

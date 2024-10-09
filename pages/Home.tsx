@@ -1,10 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
+import CompanyLogosBanner from '@/components/companies_banner';
+import Hero from '@/components/Hero';
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Hero Section */}
+    <div className="min-h-screen bg-[#030014]">
+      
+      <Hero />
+      
       <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-24">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold leading-tight md:text-6xl">
@@ -29,9 +33,9 @@ const HomePage = () => {
         <div className="mt-12">
           {/* Add an image or video for the hero section */}
           <img
-            src="/images/hero-image.jpg"
+            src="/touch.webp"
             alt="Innovation and AI technology"
-            className="w-full h-64 object-cover"
+            className="w-full h-62 object-cover"
           />
         </div>
       </section>
@@ -62,7 +66,7 @@ const HomePage = () => {
                 <li>+50 Projects Delivered</li>
                 <li>+10 Industries Served</li>
                 <li>100% Client Satisfaction Rate</li>
-              </ul>
+              </ul>              
               <Link href="/about-us">
                 <button className="mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
                   About Us
@@ -172,6 +176,9 @@ const HomePage = () => {
           </Link>
         </div>
       </section>
+
+      <CompanyLogosBanner />
+
     </div>
   );
 };
