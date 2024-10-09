@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const ServicesPage = () => {
   return (
@@ -34,9 +35,11 @@ const ServicesPage = () => {
             </p>
           </div>
           <div>
-            <img
-              src="/images/automation_service_image.jpg" // Add appropriate image path
+            <Image
+              src="" // Add appropriate image path
               alt="AI-Powered Automation"
+              width={195}
+              height={195}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -45,9 +48,11 @@ const ServicesPage = () => {
         {/* Service 2 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div>
-            <img
-              src="/images/data_analytics_image.jpg" // Add appropriate image path
+            <Image
+              src="" // Add appropriate image path
               alt="Data Analytics & Insights"
+              width={195}
+              height={195}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -63,7 +68,7 @@ const ServicesPage = () => {
             </ul>
             <p className="mt-4 font-semibold text-gray-800">Pricing: Starting at $1,800 per month</p>
             <p className="mt-4 italic text-gray-500">
-              "The insights we gained from Nexus AI’s analytics tools have significantly improved our decision-making."
+              "The insights we gained from Nexus AI analytics tools have significantly improved our decision-making."
               — Siti R., CEO of RetailHub
             </p>
           </div>
@@ -83,14 +88,16 @@ const ServicesPage = () => {
             </ul>
             <p className="mt-4 font-semibold text-gray-800">Pricing: Custom pricing based on project size and complexity</p>
             <p className="mt-4 italic text-gray-500">
-              "Nexus AI’s chatbot transformed our customer service operations. It handles thousands of inquiries daily."
+              "Nexus AI chatbot transformed our customer service operations. It handles thousands of inquiries daily."
               — Eka P., Head of Customer Support at TokoLaris
             </p>
           </div>
           <div>
-            <img
-              src="/images/nlp_service_image.jpg" // Add appropriate image path
+            <Image
+              src="" // Add appropriate image path
               alt="Natural Language Processing"
+              width={195}
+              height={195}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -99,9 +106,11 @@ const ServicesPage = () => {
         {/* Service 4 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div>
-            <img
-              src="/images/computer_vision_image.jpg" // Add appropriate image path
+            <Image
+              src="" // Add appropriate image path
               alt="Computer Vision Solutions"
+              width={195}
+              height={195}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -117,7 +126,7 @@ const ServicesPage = () => {
             </ul>
             <p className="mt-4 font-semibold text-gray-800">Pricing: Starting at $5,000 per project</p>
             <p className="mt-4 italic text-gray-500">
-              "With Nexus AI’s computer vision tools, we’ve improved our security systems and enhanced customer experiences."
+              "With Nexus AI computer vision tools, we have improved our security systems and enhanced customer experiences."
               — Asep B., Head of IT at SuperMart
             </p>
           </div>
@@ -137,14 +146,16 @@ const ServicesPage = () => {
             </ul>
             <p className="mt-4 font-semibold text-gray-800">Pricing: Consultation packages start at $3,000</p>
             <p className="mt-4 italic text-gray-500">
-              "Nexus AI’s consulting services helped us create a clear AI roadmap, streamlining our operations."
+              "Nexus AI consulting services helped us create a clear AI roadmap, streamlining our operations."
               — Andi K., CTO of MediHealth Group
             </p>
           </div>
           <div>
-            <img
-              src="/images/consulting_service_image.jpg" // Add appropriate image path
+            <Image
+              src="" // Add appropriate image path
               alt="AI Consulting & Strategy"
+              width={195}
+              height={195}
               className="rounded-lg shadow-lg"
             />
           </div>
@@ -153,9 +164,11 @@ const ServicesPage = () => {
         {/* Service 6 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div>
-            <img
-              src="/images/custom_ai_solution_image.jpg" // Add appropriate image path
+            <Image
+              src="" // Add appropriate image path
               alt="Custom AI Solutions"
+              width={195}
+              height={195}
               className="rounded-lg shadow-lg"
             />
           </div>
