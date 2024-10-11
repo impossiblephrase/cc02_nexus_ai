@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceItem from '@/components/our_solutions';
+import ServiceItem from '@/components/serviceItem';
 
 const ServicesPage = () => {
   const services = [
