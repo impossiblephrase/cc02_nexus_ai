@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 interface Service {
   title: string;
@@ -43,7 +44,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ service, reverse = false }) =
         </button>
       </div>
       <div>
-        <img
+        <Image
           src={image} // Ensure the image paths are correct
           alt={alt}
           className="rounded-lg shadow-lg"

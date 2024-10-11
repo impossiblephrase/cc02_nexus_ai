@@ -61,7 +61,7 @@ const TeamsPage = () => {
                 <h3 className="text-2xl font-bold text-gray-800">Kartika Sari</h3>
                 <p className="text-indigo-600 font-semibold">Chief Technology Officer (CTO)</p>
                 <p className="mt-4 text-gray-700 leading-relaxed">
-                  Expertise: Machine Learning, Deep Learning, Software Development. Kartika leads Nexus AI's technological innovation to ensure that our AI solutions remain cutting-edge.
+                  Expertise: Machine Learning, Deep Learning, Software Development. Kartika leads Nexus AI technological innovation to ensure that our AI solutions remain cutting-edge.
                 </p>
                 <div className="mt-4">
                   <a href="mailto:kartika@nexusai.com" className="text-indigo-600 hover:text-indigo-800 underline">
@@ -299,7 +299,7 @@ const TeamsPage = () => {
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold">Join Our Team</h2>
           <p className="mt-4 text-lg max-w-2xl mx-auto">
-            At Nexus AI, we are always looking for talented individuals passionate about AI's future. Explore our open positions and join our innovative team.
+            At Nexus AI, we are always looking for talented individuals passionate about AI future. Explore our open positions and join our innovative team.
           </p>
           <div className="mt-6">
             <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-200">

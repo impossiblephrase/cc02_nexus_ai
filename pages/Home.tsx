@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import CompanyLogosBanner from '@/components/companies_banner';
 import Hero from '@/components/Hero';
+import Image from 'next/image';
 
 const HomePage = () => {
   return (
@@ -34,7 +35,7 @@ const HomePage = () => {
         </div>
         <div className="mt-12">
           {/* Add an image or video for the hero section */}
-          <img
+          <Image
             src="/touch.webp"
             alt="Innovation and AI technology"
             className="w-full h-62 object-cover"
@@ -166,7 +167,7 @@ const HomePage = () => {
             {/* Testimonial 3 */}
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <p className="text-gray-600">
-                “Thanks to Nexus AI’s expertise, we’ve been able to implement AI-powered systems that have greatly improved our customer service and operational workflows.”
+                “Thanks to Nexus AI expertise, we have been able to implement AI-powered systems that have greatly improved our customer service and operational workflows.”
               </p>
               <div className="mt-4 font-semibold text-blue-600">— Dwi K., CTO of Smart Solutions Inc.</div>
             </div>
