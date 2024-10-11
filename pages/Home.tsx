@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import CompanyLogosBanner from '@/components/companies_banner';
-import Hero from '@/components/hero';
+import Hero from '@/components/Hero';
 
 const HomePage = () => {
   return (
