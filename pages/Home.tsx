@@ -6,9 +6,11 @@ import Hero from '@/components/Hero';
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-[#030014]">
-      
-      <Hero />
-      
+      <section>
+        <div>
+        <Hero />
+        </div>
+      </section>
       <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-24">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold leading-tight md:text-6xl">
