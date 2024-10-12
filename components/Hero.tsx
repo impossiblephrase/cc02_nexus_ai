@@ -1,19 +1,19 @@
-import React from 'react'
-import HeroContent from './HeroContent'
+import React from 'react';
+import HeroContent from './HeroContent';
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
-    <div className='relative flex flex-col h-full w-full'>
-      <video 
-      autoPlay
-      muted
-      loop
-      className='rotate-180 absolute top-[40px] left-0 z-[1] w-full h-full object-cover'>
-      <source src='/blackhole.webm' type='video/webm'/>
-      </video>
+    <div
+      className="relative h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('/touch2.webp')" }}
+    >
+      {/* Optional: Overlay */}
+      <div className="absolute inset-0 bg-black opacity-10"></div>
+
+      {/* Content */}
       <HeroContent />
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

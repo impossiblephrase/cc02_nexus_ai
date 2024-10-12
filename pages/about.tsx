@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen mt-32 bg-gray-100">
       {/* Main Container */}
       <div className="container mx-auto px-6 py-16">
         {/* Who We Are Section */}

@@ -12,39 +12,9 @@ const HomePage = () => {
         <Hero />
         </div>
       </section>
-      <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-24">
-        <div className="container mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold leading-tight md:text-6xl">
-            Empowering Businesses with AI-Driven Solutions
-          </h1>
-          <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto">
-            At Nexus AI, we combine cutting-edge artificial intelligence with industry expertise to unlock new growth opportunities for your business. Transform the way you operate with intelligent automation, data-driven insights, and future-proof AI technology.
-          </p>
-          <div className="mt-8 space-x-4">
-            <Link href="/about-us">
-              <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-200 transition">
-                Get Started
-              </button>
-            </Link>
-            <Link href="/about-us">
-              <button className="px-8 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition">
-                Learn More
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="mt-12">
-          {/* Add an image or video for the hero section */}
-          <Image
-            src="/touch.webp"
-            alt="Innovation and AI technology"
-            className="w-full h-62 object-cover"
-          />
-        </div>
-      </section>
 
       {/* Mission Statement */}
-      <section className="py-12 bg-white">
+      <section className="py-32 bg-white">
         <div className="container mx-auto px-6 text-center">
           <p className="text-2xl font-semibold italic text-gray-800">
             “We are on a mission to help businesses harness the power of AI to streamline processes, boost productivity, and create smarter, more scalable solutions.”

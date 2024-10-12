@@ -74,7 +74,7 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="flex flex-col items-center space-y-4 py-4 bg-[#030014]">
-            <a href="/" className="text-white hover:text-gray-200">
+            <a href="/" className="text-white font-bold hover:text-gray-200">
               Home
             </a>
             <a href="/about-us" className="text-white font-bold hover:text-gray-200">

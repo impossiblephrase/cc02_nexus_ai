@@ -1,4 +1,4 @@
-import TeamsPage from "@/pages/OurTeam";
+import TeamsPage from "@/pages/our_team";
 
 export default function Team() {
   return (

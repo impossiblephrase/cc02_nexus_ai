@@ -96,7 +96,7 @@ const ServicesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen mt-32 bg-gray-50">
       {/* Page Header */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
         <div className="container mx-auto px-6">
