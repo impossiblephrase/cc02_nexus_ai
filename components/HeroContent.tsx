@@ -2,9 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
-import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/components/motion'
-import { SparklesIcon } from '@heroicons/react/24/solid';
-import Image from 'next/image';
+import { slideInFromLeft } from '@/components/motion'
 
 const HeroContent = () => {
   return (

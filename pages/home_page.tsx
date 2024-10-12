@@ -2,7 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 import CompanyLogosBanner from '@/components/companies_banner';
 import Hero from '@/components/Hero';
-import Image from 'next/image';
 
 const HomePage = () => {
   return (
