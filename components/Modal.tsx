@@ -64,9 +64,8 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
         </div>
 
         {success ? (
-          <div className="text-green-500">
-            Thank you for reaching us.<br/>
-            We will contact you soon!
+          <div className="text-green-500 font-semibold">
+            Message sent succesfully! Thank you for reaching us. We will contact you soon!
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-4">
