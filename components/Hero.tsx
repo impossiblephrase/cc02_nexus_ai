@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       style={{ backgroundImage: "url('/touch2.webp')" }}
     >
       {/* Optional: Overlay */}
-      <div className="absolute inset-0 bg-black opacity-10"></div>
+      <div className="absolute inset-0 bg-black opacity-15"></div>
 
       {/* Content */}
       <HeroContent />

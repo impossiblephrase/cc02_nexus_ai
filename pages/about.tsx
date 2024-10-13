@@ -2,11 +2,11 @@ import React from 'react';
 
 const AboutPage = () => {
   return (
-    <div className="min-h-screen mt-32 bg-gray-100">
+    <div className="min-h-screen py-24 bg-gray-100">
       {/* Main Container */}
       <div className="container mx-auto px-6 py-16">
         {/* Who We Are Section */}
-        <section className="mb-16">
+        <section className="mb-32">
           <h1 className="text-4xl font-bold text-center text-blue-600">Who We Are</h1>
           <p className="mt-6 text-lg text-gray-700 text-center max-w-3xl mx-auto">
             Nexus AI is a forward-thinking tech startup based in Indonesia, specializing in artificial intelligence (AI) solutions tailored to solve real-world business challenges. Since our inception, we’ve been on a mission to empower businesses to leverage AI and transform how they operate, unlocking new levels of efficiency, innovation, and growth.
@@ -17,7 +17,7 @@ const AboutPage = () => {
         </section>
 
         {/* Our Story Section */}
-        <section className="mb-16">
+        <section className="mb-24">
           <h2 className="text-3xl font-bold text-center text-blue-600">Our Story</h2>
           <p className="mt-6 text-lg text-gray-700 max-w-4xl mx-auto">
             Nexus AI was founded in 2020 by Adi Nugroho, a passionate computer scientist who saw the transformative potential of AI in Indonesia and beyond. Adi’s vision was to create a company that could bridge the gap between cutting-edge AI technology and practical business applications.
@@ -31,7 +31,7 @@ const AboutPage = () => {
         </section>
 
         {/* Vision & Mission Section */}
-        <section className="mb-16">
+        <section className="mb-32">
           <h2 className="text-3xl font-bold text-center text-blue-600">Our Vision</h2>
           <p className="mt-6 text-lg text-gray-700 text-center max-w-4xl mx-auto">
             Our vision is to become a leader in AI-driven solutions across Southeast Asia, enabling businesses to fully embrace the potential of AI for sustainable and scalable growth.
@@ -43,7 +43,7 @@ const AboutPage = () => {
         </section>
 
         {/* Meet Our Team Section */}
-        <section className="mb-16">
+        <section className="mb-32">
           <h2 className="text-3xl font-bold text-center text-blue-600">Meet Our Team</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Team Member 1 */}
@@ -78,7 +78,7 @@ const AboutPage = () => {
         </section>
 
         {/* Our Culture Section */}
-        <section className="mb-16">
+        <section className="mb-32">
           <h2 className="text-3xl font-bold text-center text-blue-600">Our Culture</h2>
           <p className="mt-6 text-lg text-gray-700 max-w-4xl mx-auto">
             At Nexus AI, we believe in fostering a work culture that is collaborative, innovative, and inclusive. We encourage every member of our team to challenge conventional thinking and approach problems with a fresh perspective. Our culture thrives on curiosity and continuous learning, ensuring that we stay at the cutting edge of AI technology.
@@ -112,7 +112,7 @@ const AboutPage = () => {
         </section>
 
         {/* Why Choose Us Section */}
-        <section className="mb-16">
+        <section className="mb-32">
           <h2 className="text-3xl font-bold text-center text-blue-600">Why Choose Nexus AI?</h2>
           <p className="mt-6 text-lg text-gray-700 max-w-4xl mx-auto">
             Expertise and Experience: Our team has deep expertise in AI technologies, backed by years of experience in implementing successful AI solutions across multiple industries.
@@ -129,7 +129,7 @@ const AboutPage = () => {
         </section>
 
         {/* Our Commitment Section */}
-        <section className="mb-16">
+        <section className="mb-32">
           <h2 className="text-3xl font-bold text-center text-blue-600">Our Commitment to the Future</h2>
           <p className="mt-6 text-lg text-gray-700 max-w-4xl mx-auto">
             As we move forward, Nexus AI is committed to staying at the forefront of AI innovation. We believe that AI will continue to transform industries and change the way we live and work, and we are excited to be a part of that journey. Our focus will remain on creating solutions that are both cutting-edge and practical, designed to make a real impact on businesses and society.

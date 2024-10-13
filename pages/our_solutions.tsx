@@ -1,5 +1,5 @@
 import React from 'react';
-import ServiceItem from '@/components/serviceItem';
+import ServiceItem from '@/components/ServiceItem';
 
 const ServicesPage = () => {
   const services = [
@@ -15,7 +15,7 @@ const ServicesPage = () => {
       pricing: 'Starting at $2,500 per implementation',
       testimonial:
         '"The automation solution from Nexus AI reduced our manual work by 50%, allowing us to focus more on growing the business." — Rama A., Operations Manager at IndoLogistics',
-      image: '', // Replace with actual image path
+      image: '/services/automation.jpg', // Replace with actual image path
       alt: 'AI-Powered Automation',
     },
     {
@@ -30,7 +30,7 @@ const ServicesPage = () => {
       pricing: 'Starting at $1,800 per month',
       testimonial:
         '"The insights we gained from Nexus AI analytics tools have significantly improved our decision-making." — Siti R., CEO of RetailHub',
-      image: '', // Replace with actual image path
+      image: '/services/data_analytics.jpg', // Replace with actual image path
       alt: 'Data Analytics & Insights',
     },
     {
@@ -45,7 +45,7 @@ const ServicesPage = () => {
       pricing: 'Custom pricing based on project size and complexity',
       testimonial:
         '"Nexus AI chatbot transformed our customer service operations. It handles thousands of inquiries daily." — Eka P., Head of Customer Support at TokoLaris',
-      image: '', // Replace with actual image path
+      image: '/services/nlp.webp', // Replace with actual image path
       alt: 'Natural Language Processing',
     },
     {
@@ -60,7 +60,7 @@ const ServicesPage = () => {
       pricing: 'Starting at $5,000 per project',
       testimonial:
         '"With Nexus AI computer vision tools, we have improved our security systems and enhanced customer experiences." — Asep B., Head of IT at SuperMart',
-      image: '', // Replace with actual image path
+      image: '/services/vision.jpeg', // Replace with actual image path
       alt: 'Computer Vision Solutions',
     },
     {
@@ -75,7 +75,7 @@ const ServicesPage = () => {
       pricing: 'Consultation packages start at $3,000',
       testimonial:
         '"Nexus AI consulting services helped us create a clear AI roadmap, streamlining our operations." — Andi K., CTO of MediHealth Group',
-      image: '', // Replace with actual image path
+      image: '/services/ai_consulting.webp', // Replace with actual image path
       alt: 'AI Consulting & Strategy',
     },
     {
@@ -90,15 +90,15 @@ const ServicesPage = () => {
       pricing: 'Custom pricing based on project scope',
       testimonial:
         '"The custom AI solution developed by Nexus AI has been a game-changer for us." — Bambang S., CEO of NextGen Technologies',
-      image: '', // Replace with actual image path
+      image: '/services/custom_ai.webp', // Replace with actual image path
       alt: 'Custom AI Solutions',
     },
   ];
 
   return (
-    <div className="min-h-screen mt-32 bg-gray-50">
+    <div className="min-h-screen py-16  bg-gray-50">
       {/* Page Header */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-center">
+      <section className="py-16 bg-gradient-to-b from-[#030014] to-blue-800 text-white text-center">
         <div className="container mx-auto px-6">
           <h1 className="text-5xl font-bold mb-4">Our Solutions</h1>
           <p className="text-lg max-w-2xl mx-auto">

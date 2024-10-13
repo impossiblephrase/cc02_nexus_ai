@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
-import { slideInFromLeft } from '@/components/motion'
+import { slideInFromLeft } from '@/components/motion';
 
 const HeroContent = () => {
   return (
@@ -23,17 +23,16 @@ const HeroContent = () => {
 
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-auto[600px] w-auto h-auto'>
+                    className='flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[800px] w-auto h-auto'>
                     <span>
-                    Innovating the Future of <br />
-                    Business with <br />
+                    Innovating the Future of Business with
                     <span className='text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500'> NEXUS Artificial Intelligence </span>
                     </span>
                 </motion.div>
                     
                 <motion.p
                     variants={slideInFromLeft(0.8)}
-                    className='text-lg text-gray-400 my-5 max-w-[600px]'>
+                    className='text-lg text-white text shadow-xl my-5 max-w-[600px]'>
                     
                     At Nexus AI, we specialize in transforming data into actionable insights through cutting-edge 
                     artificial intelligence solutions. Our mission is to empower businesses to optimize operations, 
@@ -41,8 +40,9 @@ const HeroContent = () => {
                 </motion.p>
 
                 <motion.a
-                variants={slideInFromLeft(1)}
-                className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
+                href='/services'
+                variants={slideInFromLeft(0.9)}
+                className='px-3 py-5 bg-transparent border-2 text-center cursor-pointer border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition max-w-[250px]'
                 >
                 Explore our Services
                 </motion.a>

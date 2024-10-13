@@ -1,10 +1,10 @@
-import ServicesPage from "@/pages/our_solutions";
+import Testimonials from "@/pages/testimonials_page";
 
-export default function Services() {
+export default function Home() {
   return (
    <main className="h-full w-full">
     <div className="flex flex-col gap-20">
-     <ServicesPage />
+      <Testimonials />
     </div>
    </main>
   );

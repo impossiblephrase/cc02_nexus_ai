@@ -39,15 +39,17 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ service, reverse = false }) =
         </ul>
         <p className="mt-4 font-semibold text-gray-800">{pricing}</p>
         <p className="mt-4 italic text-gray-500">{testimonial}</p>
-        <button className="mt-6 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+        <button className="mt-6 px-8 py-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
           Apply Now
         </button>
       </div>
       <div>
         <Image
-          src={image} // Ensure the image paths are correct
+          src={image} 
+          width={400}
+          height={400}
           alt={alt}
-          className="rounded-lg shadow-lg"
+          className="rounded-lg shadow-lg m-auto"
         />
       </div>
     </div>

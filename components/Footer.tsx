@@ -3,15 +3,15 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-10">
+    <footer className="bg-gray-900 text-white py-10">
       <div className="container mx-auto px-6">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo and Company Info */}
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold">Nexus AI</h2>
-            <p className="mt-4 text-gray-400">
-              Empowering businesses with AI-driven solutions to unlock new opportunities for growth and innovation.
+            <p className=" text-gray-400">
+            Redefining The Future            
             </p>
           </div>
 
@@ -26,12 +26,12 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#about-us" className="text-gray-400 hover:text-white">
+                  <Link href="/about-us" className="text-gray-400 hover:text-white">
                     About Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="#services" className="text-gray-400 hover:text-white">
+                  <Link href="/services" className="text-gray-400 hover:text-white">
                     Services
                   </Link>
                 </li>
@@ -41,7 +41,7 @@ const Footer = () => {
               <h3 className="text-lg font-semibold">Resources</h3>
               <ul className="mt-4 space-y-2">
                 <li>
-                  <Link href="#testimonials" className="text-gray-400 hover:text-white">
+                  <Link href="/testimonials" className="text-gray-400 hover:text-white">
                     Testimonials
                   </Link>
                 </li>
@@ -76,8 +76,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-12 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Nexus AI. All rights reserved.</p>
+        <div className="mt-12 text-center text-sm font-serif text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Nexus AI by Sendi Khaerudin. All rights reserved.</p>
         </div>
       </div>
     </footer>

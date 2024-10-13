@@ -32,7 +32,7 @@ const HomePage = () => {
             Since 2020, we have worked with companies across various industries, helping them optimize their operations, improve decision-making, and drive innovation. Based in Indonesia, our team of AI engineers, data scientists, and business strategists brings together deep technical expertise and industry knowledge.
           </p>
           <div className="mt-8 flex justify-center">
-            <div className="bg-white p-6 rounded-lg shadow-lg w-1/3">
+            <div className="bg-white p-6 rounded-lg shadow-lg w-1/2">
               <h3 className="text-2xl font-semibold">Nexus AI in Numbers</h3>
               <ul className="mt-4 text-gray-600 space-y-2">
                 <li>+50 Projects Delivered</li>

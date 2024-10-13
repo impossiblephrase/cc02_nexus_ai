@@ -5,10 +5,7 @@ export default function About() {
    <main className="h-full w-full">
     <div className="flex flex-col gap-20">
       <AboutPage />
-    
     </div>
-
-
    </main>
   );
 }
