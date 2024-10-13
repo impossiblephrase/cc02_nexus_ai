@@ -113,7 +113,7 @@ const TeamsPage = () => {
             At Nexus AI, we are always looking for talented individuals passionate about AI future. Explore our open positions and join our innovative team.
           </p>
           <div className="mt-6">
-            <button className="px-6 md:px-8 py-2 md:py-3 bg-white text-blue-600 font-semibold rounded-lg hover:bg-gray-200">
+            <button className="px-6 md:px-8 py-2 md:py-3 shadow-xl text-blue-600 bg-white font-semibold rounded-lg hover:bg-blue-500 hover:text-white">
               View Open Positions
             </button>
           </div>
@@ -133,7 +133,7 @@ const TeamsPage = () => {
             <li>• Continuous Learning: We provide opportunities for professional growth, training, and development.</li>
           </ul>
           <div className="mt-6">
-            <button className="px-6 md:px-8 py-2 md:py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700">
+            <button className="px-6 md:px-8 py-2 md:py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-500">
               Contact Us
             </button>
           </div>

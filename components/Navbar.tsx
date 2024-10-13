@@ -2,12 +2,24 @@
 import React, { useState } from 'react';
 import Link from 'next/link'; 
 import Image from 'next/image';
+import Modal from './Modal';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -62,11 +74,12 @@ const Navbar = () => {
             Services
           </Link>
           <Link href="/teams" className="text-white font-bold text-sm hover:text-gray-200">
-            Teams
+            Our Team
           </Link>
-          <Link href="/contact" className="text-white font-bold text-sm hover:text-gray-200">
-            Contact
-          </Link>
+          <button onClick={openModal} className="text-white font-bold text-sm hover:text-gray-200">
+            Contact Us
+          </button>
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </div>
 
@@ -86,9 +99,10 @@ const Navbar = () => {
             <a href="/teams" className="text-white font-bold hover:text-gray-200">
               Teams
             </a>
-            <a href="/contact" className="text-white font-bold hover:text-gray-200">
-              Contact
-            </a>
+            <button onClick={openModal} className="text-white font-bold hover:text-gray-200">
+              Contact Us
+            </button>
+            <Modal isOpen={isModalOpen} onClose={closeModal} />
           </div>
         </div>
       )}

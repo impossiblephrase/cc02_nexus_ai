@@ -1,15 +1,29 @@
+"use client"
 import React from 'react';
 import Link from 'next/link';
+import { useState } from 'react';
+import Modal from './Modal';
 
 const Footer = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+    
   return (
-    <footer className="bg-[#030014] text-white py-16">
+    <footer className="bg-[#030014] py-16">
       <div className="container mx-auto px-6">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row justify-between">
           {/* Logo and Company Info */}
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold">Nexus AI</h2>
+            <h2 className="text-2xl font-bold text-white">Nexus AI</h2>
             <p className=" text-gray-400">
             Redefining The Future            
             </p>
@@ -18,7 +32,7 @@ const Footer = () => {
           {/* Links */}
           <div className="grid grid-cols-3 gap-6">
             <div>
-              <h3 className="text-lg font-semibold">Company</h3>
+              <h3 className="text-lg text-white font-semibold">Company</h3>
               <ul className="mt-4 space-y-2">
                 <li>
                   <Link href="/" className="text-gray-400 hover:text-white">
@@ -38,7 +52,7 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Resources</h3>
+              <h3 className="text-lg text-white font-semibold">Resources</h3>
               <ul className="mt-4 space-y-2">
                 <li>
                   <Link href="/testimonials" className="text-gray-400 hover:text-white">
@@ -46,14 +60,16 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contact" className="text-gray-400 hover:text-white">
-                    Contact
-                  </Link>
+                <button
+                  onClick={openModal}
+                  className="text-gray-400 hover:text-white">     
+                  Contact Us
+                </button>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold">Follow Us</h3>
+              <h3 className="text-lg text-white font-semibold">Follow Us</h3>
               <div className="mt-4 flex space-x-4">
                 <a href="https://twitter.com" target="_blank" className="text-gray-400 hover:text-white">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -79,6 +95,8 @@ const Footer = () => {
         <div className="mt-12 text-center text-sm font-serif text-gray-400">
           <p>&copy; {new Date().getFullYear()} Nexus AI by Sendi Khaerudin. All rights reserved.</p>
         </div>
+         {/* Modal */}
+        <Modal isOpen={isModalOpen} onClose={closeModal} />
       </div>
     </footer>
   );

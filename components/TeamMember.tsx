@@ -47,7 +47,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({ members, heading, isLeadershi
                 <h3 className={`text-xl md:text-2xl font-bold ${isLeadership ? 'text-gray-800' : 'text-gray-700'}`}>
                   {member.name}
                 </h3>
-                <p className={`font-semibold ${isLeadership ? 'text-blue-800' : 'text-indigo-500'}`}>{member.title}</p>
+                <p className={`font-semibold ${isLeadership ? 'text-blue-800' : 'text-blue-800'}`}>{member.title}</p>
                 <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
                   {member.expertise}
                 </p>
