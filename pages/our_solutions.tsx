@@ -15,7 +15,7 @@ const ServicesPage = () => {
       pricing: 'Starting at $2,500 per implementation',
       testimonial:
         '"The automation solution from Nexus AI reduced our manual work by 50%, allowing us to focus more on growing the business." — Rama A., Operations Manager at IndoLogistics',
-      image: '/services/automation.jpg', // Replace with actual image path
+      image: '/services/automation.jpg',
       alt: 'AI-Powered Automation',
     },
     {
