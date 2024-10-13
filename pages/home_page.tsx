@@ -13,16 +13,16 @@ const HomePage = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-32 bg-white">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-2xl font-semibold italic text-gray-800">
+      <section className="py-32 bg-[#030014]">
+        <div className="container mx-auto bg- px-6 text-center">
+          <p className="text-2xl font-serif font-bold text-gray-300">
             “We are on a mission to help businesses harness the power of AI to streamline processes, boost productivity, and create smarter, more scalable solutions.”
           </p>
         </div>
       </section>
 
       {/* Company Overview */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-32 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold">Who We Are</h2>
           <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
@@ -50,7 +50,7 @@ const HomePage = () => {
       </section>
 
       {/* Products and Services */}
-      <section className="py-16 bg-white">
+      <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold">Our Solutions</h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -115,7 +115,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-20 bg-gray-100">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold">What Our Clients Say</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">

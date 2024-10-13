@@ -1,6 +1,10 @@
 // TeamMembers.tsx
 import React from 'react';
 import Image from 'next/image';
+import { EnvelopeIcon } from '@heroicons/react/24/solid';
+import { RxGithubLogo, RxLinkedinLogo, } from "react-icons/rx";
+
+
 
 interface TeamMember {
   name: string;
@@ -9,12 +13,14 @@ interface TeamMember {
   email: string;
   linkedin?: string;
   imageSrc: string;
+  
 }
 
 interface TeamMembersProps {
   members: TeamMember[];
   heading: string;
   isLeadership?: boolean; // New prop to differentiate styling
+  
 }
 
 const TeamMembers: React.FC<TeamMembersProps> = ({ members, heading, isLeadership = false }) => {
@@ -45,24 +51,16 @@ const TeamMembers: React.FC<TeamMembersProps> = ({ members, heading, isLeadershi
                 <p className="mt-4 text-gray-700 text-sm md:text-base leading-relaxed">
                   {member.expertise}
                 </p>
-                <div className="mt-4">
-                  <a
-                    href={`mailto:${member.email}`}
-                    className="text-blue-800 hover:text-indigo-800 underline"
-                  >
-                    Email
+                <div className="social-icons mt-2 flex space-x-2">
+                  <a aria-label="Email">
+                  <EnvelopeIcon className="h-6 w-6 text-black cursor-pointer" />
                   </a>
-                  {member.linkedin && (
-                    <>
-                      <br />
-                      <a
-                        href={member.linkedin}
-                        className="text-blue-800 hover:text-indigo-800 underline"
-                      >
-                        LinkedIn
-                      </a>
-                    </>
-                  )}
+                  <a aria-label="LinkedIn">
+                  <RxLinkedinLogo className="h-6 w-6 text-black cursor-pointer"/>
+                  </a>
+                  <a aria-label="GitHub">
+                  <RxGithubLogo className="h-6 w-6 text-black cursor-pointer" />
+                  </a>
                 </div>
               </div>
             </div>

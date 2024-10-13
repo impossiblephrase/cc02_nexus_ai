@@ -45,8 +45,7 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Teguh Pratama',
     title: 'Senior AI Engineer',
-    expertise:
-      'Expertise: Natural Language Processing, Computer Vision, AI System Architecture.',
+    expertise: 'Expertise: Natural Language Processing, Computer Vision, AI System Architecture.',
     email: 'teguh@nexusai.com',
     imageSrc: '/team_members/Teguh_Pratama.webp',
   },

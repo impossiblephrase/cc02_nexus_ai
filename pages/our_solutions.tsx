@@ -30,7 +30,7 @@ const ServicesPage = () => {
       pricing: 'Starting at $1,800 per month',
       testimonial:
         '"The insights we gained from Nexus AI analytics tools have significantly improved our decision-making." — Siti R., CEO of RetailHub',
-      image: '/services/data_analytics.jpg', // Replace with actual image path
+      image: '/services/data_analytics.jpg', 
       alt: 'Data Analytics & Insights',
     },
     {
@@ -45,7 +45,7 @@ const ServicesPage = () => {
       pricing: 'Custom pricing based on project size and complexity',
       testimonial:
         '"Nexus AI chatbot transformed our customer service operations. It handles thousands of inquiries daily." — Eka P., Head of Customer Support at TokoLaris',
-      image: '/services/nlp.webp', // Replace with actual image path
+      image: '/services/nlp.webp', 
       alt: 'Natural Language Processing',
     },
     {
@@ -60,7 +60,7 @@ const ServicesPage = () => {
       pricing: 'Starting at $5,000 per project',
       testimonial:
         '"With Nexus AI computer vision tools, we have improved our security systems and enhanced customer experiences." — Asep B., Head of IT at SuperMart',
-      image: '/services/vision.jpeg', // Replace with actual image path
+      image: '/services/vision.jpeg', 
       alt: 'Computer Vision Solutions',
     },
     {
@@ -75,7 +75,7 @@ const ServicesPage = () => {
       pricing: 'Consultation packages start at $3,000',
       testimonial:
         '"Nexus AI consulting services helped us create a clear AI roadmap, streamlining our operations." — Andi K., CTO of MediHealth Group',
-      image: '/services/ai_consulting.webp', // Replace with actual image path
+      image: '/services/ai_consulting.webp', 
       alt: 'AI Consulting & Strategy',
     },
     {
@@ -90,7 +90,7 @@ const ServicesPage = () => {
       pricing: 'Custom pricing based on project scope',
       testimonial:
         '"The custom AI solution developed by Nexus AI has been a game-changer for us." — Bambang S., CEO of NextGen Technologies',
-      image: '/services/custom_ai.webp', // Replace with actual image path
+      image: '/services/custom_ai.webp', 
       alt: 'Custom AI Solutions',
     },
   ];

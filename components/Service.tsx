@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface Service {
   title: string;
@@ -28,7 +29,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ service, reverse = false }) =
   } = service;
 
   return (
-    <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 ${reverse ? 'md:flex-row-reverse' : ''}`}>
+    <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 mb-16bg-white p-20 rounded-lg shadow-2xl w-full ${reverse ? 'md:flex-row-reverse' : ''}`}>
       <div>
         <h3 className="text-3xl font-bold text-gray-800">{title}</h3>
         <p className="mt-4 text-gray-600">{description}</p>
@@ -39,9 +40,18 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ service, reverse = false }) =
         </ul>
         <p className="mt-4 font-semibold text-gray-800">{pricing}</p>
         <p className="mt-4 italic text-gray-500">{testimonial}</p>
-        <button className="mt-6 px-8 py-3 bg-blue-800 text-white font-semibold rounded-lg hover:bg-blue-600 transition">
-          Apply Now
-        </button>
+          <div className="mt-8 space-x-4">
+            <Link href="/about-us">
+              <button className="px-8 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-lime-500 hover:text-white transition">
+                Apply Now
+              </button>
+            </Link>
+            <Link href="/about-us">
+              <button className="px-8 py-3 bg-transparent border-2 border-blue-700 text-blue-700 font-semibold rounded-lg hover:bg-blue-500 hover:text-white hover:border-white transition">
+                More Details
+              </button>
+            </Link>
+          </div>
       </div>
       <div>
         <Image

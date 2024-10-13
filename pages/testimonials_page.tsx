@@ -84,7 +84,9 @@ const Testimonials: React.FC = () => {
                 <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover"
+                  height={150}
+                  width={150}
+                  className="rounded-full object-cover"
                 />
                 <div className="ml-4">
                   <h2 className="text-xl font-semibold">{testimonial.name}</h2>
