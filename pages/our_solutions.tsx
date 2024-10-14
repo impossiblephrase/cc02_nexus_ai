@@ -98,20 +98,22 @@ const ServicesPage = () => {
 
 
   return (
-    <div className="min-h-screen py-16  bg-gray-50">
+    <div className="min-h-screen py-10 bg-gray-50">
       {/* Page Header */}
-      <section className="py-16 bg-gradient-to-b from-[#030014] to-blue-800 text-white text-center">
-        <div className="container mx-auto px-6">
-          <h1 className="text-5xl font-bold mb-4">Our Solutions</h1>
-          <p className="text-lg max-w-2xl mx-auto">
+      <section className="py-10 md:py-16 bg-gradient-to-b from-[#030014] to-blue-800 text-white text-center">
+        <div className="container mx-auto px-4 md:px-6">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">Our Solutions</h1>
+          <p className="text-base md:text-lg max-w-lg md:max-w-2xl mx-auto">
             At Nexus AI, we offer a range of AI-powered services tailored to meet the specific needs of businesses across industries.
           </p>
         </div>
       </section>
-
+  
       {/* Services Section */}
-      <section className="py-16 container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">What We Offer</h2>
+      <section className="py-10 md:py-16 container mx-auto px-4 md:px-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">
+          What We Offer
+        </h2>
         {services.map((service, index) => (
           <ServiceItem
             key={index}

@@ -79,8 +79,8 @@ const Navbar = () => {
           <button onClick={openModal} className="text-white font-bold text-sm hover:text-gray-200">
             Contact Us
           </button>
-            <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>
+        <Modal isOpen={isModalOpen} onClose={closeModal} />
       </div>
 
       {/* Mobile Menu */}
@@ -97,7 +97,7 @@ const Navbar = () => {
               Services
             </a>
             <a href="/teams" className="text-white font-bold hover:text-gray-200">
-              Teams
+              Our Team
             </a>
             <button onClick={openModal} className="text-white font-bold hover:text-gray-200">
               Contact Us

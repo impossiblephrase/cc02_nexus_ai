@@ -1,6 +1,9 @@
 // TeamsPage.tsx
+"use client"
 import React from 'react';
 import TeamMembers, { TeamMember } from '@/components/TeamMember';
+import { useState } from 'react';
+import Modal from '@/components/Modal';
 
 const leadershipTeam: TeamMember[] = [
   {
@@ -87,60 +90,73 @@ const teamMembers: TeamMember[] = [
 ];
 
 const TeamsPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return (
     <div className="min-h-screen py-16 bg-gray-50">
       {/* Page Header */}
-      <section className="bg-gradient-to-b from-[#030014] to-blue-800 text-white py-16 md:py-24">
+      <section className="bg-gradient-to-b from-[#030014] to-blue-800 text-white py-12 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet the Nexus AI Team</h1>
-          <p className="text-base md:text-lg max-w-2xl mx-auto">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4">Meet the Nexus AI Team</h1>
+          <p className="text-sm md:text-lg max-w-xl mx-auto">
             At Nexus AI, our success is driven by our talented and dedicated team. Explore the dynamic mix of innovation, collaboration, and expertise that drives us forward.
           </p>
         </div>
       </section>
-
+  
       {/* Leadership Team */}
       <TeamMembers members={leadershipTeam} heading="Leadership Team" isLeadership={true} />
-
+  
       {/* Team Members Section */}
       <TeamMembers members={teamMembers} heading="Our Team Members" />
-
+  
       {/* Join Our Team */}
-      <section className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-32 md:py-12">
+      <section className="bg-gradient-to-r from-indigo-600 to-blue-600 text-white py-16 md:py-12">
         <div className="container mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold">Join Our Team</h2>
-          <p className="mt-4 text-base md:text-lg max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-4xl font-bold">Join Our Team</h2>
+          <p className="mt-4 text-sm md:text-lg max-w-xl mx-auto">
             At Nexus AI, we are always looking for talented individuals passionate about AI future. Explore our open positions and join our innovative team.
           </p>
           <div className="mt-6">
-            <button className="px-6 md:px-8 py-2 md:py-3 shadow-xl text-blue-600 bg-white font-semibold rounded-lg hover:bg-blue-500 hover:text-white">
+            <button className="px-4 md:px-8 py-2 md:py-3 shadow-xl text-blue-600 bg-white font-semibold rounded-lg hover:bg-blue-500 hover:text-white">
               View Open Positions
             </button>
           </div>
         </div>
       </section>
-
+  
       {/* Why Work with Us */}
-      <section className="py-24 md:py-16 container mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">Why Work with Us?</h2>
+      <section className="py-16 md:py-24 container mx-auto px-4 sm:px-6">
+        <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-12 text-gray-800">Why Work with Us?</h2>
         <div className="text-center">
-          <p className="mt-4 text-base md:text-lg max-w-2xl mx-auto text-gray-700">
+          <p className="mt-4 text-sm md:text-lg max-w-xl mx-auto text-gray-700">
             At Nexus AI, our people are our greatest asset. We offer a dynamic, inclusive work environment where creativity and innovation are encouraged.
           </p>
-          <ul className="mt-8 text-sm md:text-lg max-w-2xl mx-auto text-gray-700 space-y-4">
+          <ul className="mt-8 text-sm md:text-lg max-w-xl mx-auto text-gray-700 space-y-4">
             <li>• Innovation-Driven: We push the boundaries of AI technology to deliver cutting-edge solutions.</li>
             <li>• Collaborative Environment: We believe in teamwork and knowledge sharing to create the best outcomes for our clients.</li>
             <li>• Continuous Learning: We provide opportunities for professional growth, training, and development.</li>
           </ul>
           <div className="mt-6">
-            <button className="px-6 md:px-8 py-2 md:py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-500">
+            <button 
+            onClick={openModal}
+            className="px-4 md:px-8 py-2 md:py-3 bg-blue-700 text-white font-semibold rounded-lg hover:bg-blue-500">
               Contact Us
             </button>
           </div>
+          <Modal isOpen={isModalOpen} onClose={closeModal} />
         </div>
       </section>
     </div>
   );
+  
 };
 
 export default TeamsPage;
