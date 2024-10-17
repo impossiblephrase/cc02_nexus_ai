@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold text-white">Nexus AI</h2>
             <p className=" text-gray-400">
-            Redefining The Future            
+            AI Solutions. Real Impact            
             </p>
           </div>
 

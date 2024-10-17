@@ -17,7 +17,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "NEXUS AI",
-  description: "Redefining The Future",
+  description: "AI Solutions, Real Impact",
 };
 
 export default function RootLayout({

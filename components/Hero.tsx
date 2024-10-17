@@ -9,8 +9,6 @@ const Hero: React.FC = () => {
     >
       {/* Optional: Overlay */}
       <div className="absolute inset-0 bg-black opacity-15"></div>
-
-      {/* Content */}
       <HeroContent />
     </div>
   );

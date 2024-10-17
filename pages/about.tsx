@@ -3,8 +3,7 @@ import React from 'react';
 const AboutPage = () => {
   return (
     <div className="min-h-screen py-16 bg-gray-100">
-
-     <section className="py-32 bg-gradient-to-b from-[#030014] to-blue-800">
+     <section className="py-32 -mt-16 bg-gradient-to-b from-[#030014] to-blue-800">
         <div className="container mx-auto bg- px-6 text-center">
           <p className="text-2xl font-serif font-bold text-gray-300">
             “We are on a mission to help businesses harness the power of AI to streamline processes, boost productivity, and create smarter, more scalable solutions.”

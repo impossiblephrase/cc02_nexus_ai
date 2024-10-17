@@ -1,18 +1,17 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link'; 
 import Image from 'next/image';
 import Modal from './Modal';
 
-
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);  // State to track scroll position
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
     setIsModalOpen(true);
@@ -22,8 +21,23 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-[#030014] fixed top-0 left-0 right-0 p-4 z-50 shadow-lg">
+    <nav className={`fixed top-0 left-0 right-0 p-4 z-50 transition-all duration-300 ${isScrolled ? 'bg-[#030014] shadow-lg' : 'bg-transparent'}`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo and text beside each other */}
         <div className="flex items-center space-x-2 text-white text-xl font-bold">

@@ -1,4 +1,3 @@
-// TeamsPage.tsx
 "use client"
 import React from 'react';
 import TeamMembers, { TeamMember } from '@/components/TeamMember';
@@ -100,9 +99,9 @@ const TeamsPage = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="min-h-screen py-16 bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
       {/* Page Header */}
-      <section className="bg-gradient-to-b from-[#030014] to-blue-800 text-white py-12 md:py-24">
+      <section className="bg-gradient-to-b from-[#030014] to-blue-800 text-white py-24 md:py-36">
         <div className="container mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Meet the Nexus AI Team</h1>
           <p className="text-sm md:text-lg max-w-xl mx-auto">
